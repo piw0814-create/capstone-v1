@@ -35,3 +35,7 @@ http://localhost:3000 에서 Multi-Agent 모드 (Supervisor)를 선택한다. �
 보완 사항과 검증 결과: verification/multiagent/results.md
 
 구현 차이와 실제 검증 로그: verification/multiagent/implementation-notes.md
+
+## 개념과 후속 학습
+
+역할 분리, 상태·이벤트 계약, 순차 실행의 이유와 보완 이력은 [수업 핵심 정리](COURSE-NOTES.md)에 정리했다. 교재의 운영·평가·영속화와 Agent 확장 주제는 [후속 학습](OPERATIONS-LEARNING.md)에 현재 구현과 구분해 기록했다.

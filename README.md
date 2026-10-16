@@ -1,50 +1,69 @@
 # AI Agent Capstone
 
-첨부한 교수님 노션의 Project Structure v1과 MCP Server 가이드를 기준으로 구성합니다.
-**MCP Server의 Tool 4개, Resource 1개, Prompt 1개와 결과 모델 4개**를 작성하고 A~F 검증을 완료했습니다.
-FastAPI 단계의 핵심 4개 파일을 첨부 노션과 교수님 a11 참고본대로 작성했고, 이후 첨부 노션 S1의 SSE 스트리밍 코드를 추가했습니다.
+ICT 운영 지원 Agent 실습 저장소. MCP Server, FastAPI, 단일 Agent SSE, Next.js 채팅 화면, Supervisor 기반 멀티에이전트까지 구현하고 검증했다. 사용자 제공 노션과 교재를 기준으로 학습 내용과 구현 차이를 기록한다.
 
-## 프로젝트 구조
+## 학습 문서
+
+| 문서 | 내용 |
+| --- | --- |
+| [수업 핵심 정리](COURSE-NOTES.md) | 핵심 개념, 주의점, 설계 질문, 실제 보완과 검증의 한계 |
+| [후속 운영·Agent 확장](OPERATIONS-LEARNING.md) | 교재 후반의 관측·평가, 오류, 비용·시간, 영속 상태, Agent 확장 |
+| [MCP 학습](mcp-server/LEARNING.md) | Tool·Resource·Prompt 및 Inspector 확인 |
+| [환경 준비](SETUP.md) | 초기 환경과 참고본 비교 |
+| [FastAPI 학습](FASTAPI-LEARNING.md) | API와 Agent 연결 |
+| [S1 Streaming 학습](STREAMING-LEARNING.md) | S1 당시 SSE 구현·검증 기록 |
+| [Multi-agent 학습](MULTIAGENT-LEARNING.md) | 실행 방법과 최신 검증 결과 연결 |
+
+이전 단계 문서는 당시의 구현·측정 기록이다. 현재 상태와 후속 계획은 위의 핵심·후속 학습 문서를 함께 본다. 교재 원문 PDF와 비밀 환경 설정은 저장소에 포함하지 않는다.
+
+## 현재 구조
 
 ```text
-capstone-v1/
-├── .env
-├── pyproject.toml
-├── uv.lock
-├── mcp-server/
-│   ├── server.py
-│   └── data/
-│       ├── monitoring.json
-│       └── runbooks/
-├── backend/
-│   ├── main.py
-│   ├── agent/
-│   │   ├── __init__.py
-│   │   ├── graph.py
-│   │   └── mcp_client.py
-│   ├── schemas/
-│   │   ├── __init__.py
-│   │   ├── chat.py
-│   │   └── stream.py
-│   └── streaming/
-│       ├── __init__.py
-│       ├── sse_formatter.py
-│       └── event_converter.py
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   └── lib/
-└── docker-compose.yml
+frontend/                 Next.js 채팅 화면, thread 관리, 자체 SSE 파싱
+backend/main.py           FastAPI API, CORS, lifespan
+backend/agent/            단일 Agent, Supervisor Graph, MCP Client
+backend/schemas/          요청·응답·이벤트 모델
+backend/streaming/        Graph 이벤트 변환과 SSE 직렬화
+mcp-server/               Tool·Resource·Prompt 및 실습 데이터
+verification/             단계별 관측 결과와 캡처
 ```
 
-`backend`를 실습 사전 조건대로 비운 후 Step 1~4 코드를 작성했습니다. 기존 자리표시자는 별도 백업했습니다.
-frontend의 `.gitkeep`에는 실행 코드가 없습니다.
-`docker-compose.yml`은 교수님 GitHub 참고본의 PostgreSQL 설정입니다. 아직 실행하지 않았습니다.
-Part C의 config.py·supervisor/v1·v2 구조는 선택 리팩터링 단계에서 추가합니다.
+단일 Agent는 `/chat/stream`, Multi-Agent는 `/chat/supervisor/stream`을 사용한다. `/chat`은 최종 응답을 받는 일반 요청 API다. 프런트는 AI SDK 패키지를 설치했지만 현재 `useChat` 대신 자체 `fetch` 파서로 서비스 SSE를 처리한다.
 
-FastAPI 단계의 환경 준비와 a10 비교 결과: [세팅 확인](SETUP.md)
-FastAPI 코드별 역할과 직접 확인하는 방법: [Backend 학습 안내](FASTAPI-LEARNING.md)
-S1 스트리밍 구현과 원문 검증 결과: [SSE 학습 안내](STREAMING-LEARNING.md)
+Multi-agent는 계획 후 Research/Writing 작업을 순차 실행한다. 진행 카드와 하위 토큰 표시를 보완했으며 최종 답변은 한 번의 token 이벤트로 전송한다. 각 Graph의 상태는 MemorySaver에 있어 서버 재시작 후 사라진다. PostgreSQL 영속화·자동 재시도·Validator·동적 재계획은 후속 범위다.
+
+## 실행
+
+프로젝트 루트에서 Python 의존성을 준비하고 `.env`에 필요한 설정을 입력한다. 비밀 값은 커밋하지 않는다. 자세한 설정은 [환경 준비](SETUP.md)를 참고한다.
+
+```sh
+uv sync --locked
+```
+
+Backend 터미널:
+
+```sh
+cd backend
+uv run --env-file ../.env uvicorn main:app --reload --port 8000
+```
+
+별도 Frontend 터미널에서 프로젝트 루트를 기준으로 실행:
+
+```sh
+cd frontend
+npm ci
+npm run dev
+```
+
+[채팅 화면](http://localhost:3000)에서 모드를 선택한다. 서버 상태는 [health](http://localhost:8000/health), API 문서는 [docs](http://localhost:8000/docs)에서 확인한다. CORS는 `http://localhost:3000`을 허용한다. 브라우저 주소창의 GET으로 POST 전용 스트림 API를 열면 405가 발생한다.
+
+MCP를 별도로 점검할 때는 프로젝트 루트에서 실행한다.
+
+```sh
+npx @modelcontextprotocol/inspector@v1-latest uv run python mcp-server/server.py
+```
+
+Inspector에서 Connect 후 확인하고 코드 변경 시 Restart한다. `docker-compose.yml`의 PostgreSQL 설정은 현재 Graph의 저장소와 연결되지 않았다.
 
 ## 현재 MCP 단계
 
@@ -59,21 +78,6 @@ TO-DO 결과 모델 `ManualSnippet`, `JiraTicket`, `JiraTicketCreated`는 교수
 Jira 검색의 실제 API 경로는 첨부한 노션의 수정 코드대로 `/rest/api/3/search/jql`입니다.
 이번 검증은 JIRA_BASE_URL·JIRA_EMAIL·JIRA_API_TOKEN 미설정에 따른 mock 모드로 진행했습니다.
 사용자가 받은 data 파일은 그대로 사용합니다.
-
-## 실행
-
-```sh
-cd /Users/inwoopark/workspace/ai-service/capstone-v1
-uv sync --locked
-npx @modelcontextprotocol/inspector@v1-latest uv run python mcp-server/server.py
-```
-
-교수님이 수정 안내한 `v1-latest` 명령과 `mcp-server` 경로를 사용합니다.
-Inspector에서 Connect를 누르고, 코드 변경 후에는 Restart로 새 코드를 반영합니다.
-Python 환경은 기존 langgraph-v1의 설정을 재사용하며 프로젝트 이름은 capstone-v1입니다.
-FastMCP는 현재 설치된 2.13.0으로 예제를 실행합니다. 교수님 화면의 서버 버전과 동일하다는 뜻은 아닙니다.
-
-단계별 핵심과 확인 방법: [MCP 학습 안내](mcp-server/LEARNING.md)
 
 ## 제출물
 
