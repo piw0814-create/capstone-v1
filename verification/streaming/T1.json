@@ -1,0 +1,2433 @@
+{
+  "request": {
+    "message": "데이터베이스 다운 시 대응 절차를 알려주세요."
+  },
+  "curl_command": [
+    "curl",
+    "-N",
+    "--max-time",
+    "90",
+    "-X",
+    "POST",
+    "http://localhost:8000/chat/stream",
+    "-H",
+    "Content-Type: application/json",
+    "-d",
+    "{\"message\": \"데이터베이스 다운 시 대응 절차를 알려주세요.\"}",
+    "-D",
+    "/Users/inwoopark/workspace/ai-service/capstone-v1/verification/streaming/T1-headers.txt"
+  ],
+  "curl_returncode": 0,
+  "elapsed_seconds": 3.548,
+  "received_lines": [
+    {
+      "seconds": 0.6438,
+      "line": "event: tool_call_start\n"
+    },
+    {
+      "seconds": 0.6439,
+      "line": "data: {\"type\":\"tool_call_start\",\"tool_name\":\"search_operations_manual\",\"args\":{}}\n"
+    },
+    {
+      "seconds": 0.6439,
+      "line": "\n"
+    },
+    {
+      "seconds": 1.9038,
+      "line": "event: tool_call_end\n"
+    },
+    {
+      "seconds": 1.9038,
+      "line": "data: {\"type\":\"tool_call_end\",\"tool_name\":\"search_operations_manual\",\"result\":\"[{\\\"title\\\":\\\"db-down\\\",\\\"source\\\":\\\"runbook://incident-response/db-down\\\",\\\"snippet\\\":\\\"# Runbook: 데이터베이스 다운 대응 (db-down)\\\\n\\\\n## 1. 증상 인식\\\\n- 애플리케이션 로그에 `connection refused`, `timeout`, `could not connect to serv\"}\n"
+    },
+    {
+      "seconds": 1.9038,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5297,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5298,
+      "line": "data: {\"type\":\"token\",\"content\":\"데\"}\n"
+    },
+    {
+      "seconds": 2.5298,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5299,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5299,
+      "line": "data: {\"type\":\"token\",\"content\":\"이터\"}\n"
+    },
+    {
+      "seconds": 2.5299,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5319,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.532,
+      "line": "data: {\"type\":\"token\",\"content\":\"베\"}\n"
+    },
+    {
+      "seconds": 2.532,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.532,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.532,
+      "line": "data: {\"type\":\"token\",\"content\":\"이스\"}\n"
+    },
+    {
+      "seconds": 2.532,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.534,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.534,
+      "line": "data: {\"type\":\"token\",\"content\":\" 다운\"}\n"
+    },
+    {
+      "seconds": 2.534,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.534,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.534,
+      "line": "data: {\"type\":\"token\",\"content\":\" 시\"}\n"
+    },
+    {
+      "seconds": 2.534,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5367,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5367,
+      "line": "data: {\"type\":\"token\",\"content\":\" 대응\"}\n"
+    },
+    {
+      "seconds": 2.5367,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5367,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5367,
+      "line": "data: {\"type\":\"token\",\"content\":\" 절\"}\n"
+    },
+    {
+      "seconds": 2.5368,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5394,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5394,
+      "line": "data: {\"type\":\"token\",\"content\":\"차\"}\n"
+    },
+    {
+      "seconds": 2.5394,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5394,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5394,
+      "line": "data: {\"type\":\"token\",\"content\":\"는\"}\n"
+    },
+    {
+      "seconds": 2.5394,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5411,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5412,
+      "line": "data: {\"type\":\"token\",\"content\":\" 다음\"}\n"
+    },
+    {
+      "seconds": 2.5412,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5412,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5412,
+      "line": "data: {\"type\":\"token\",\"content\":\"과\"}\n"
+    },
+    {
+      "seconds": 2.5412,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5646,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5646,
+      "line": "data: {\"type\":\"token\",\"content\":\" 같습니다\"}\n"
+    },
+    {
+      "seconds": 2.5647,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5647,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5647,
+      "line": "data: {\"type\":\"token\",\"content\":\":\\n\\n\"}\n"
+    },
+    {
+      "seconds": 2.5647,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5663,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5663,
+      "line": "data: {\"type\":\"token\",\"content\":\"###\"}\n"
+    },
+    {
+      "seconds": 2.5663,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.5663,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.5663,
+      "line": "data: {\"type\":\"token\",\"content\":\" Run\"}\n"
+    },
+    {
+      "seconds": 2.5663,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.808,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.808,
+      "line": "data: {\"type\":\"token\",\"content\":\"book\"}\n"
+    },
+    {
+      "seconds": 2.808,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.808,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "data: {\"type\":\"token\",\"content\":\":\"}\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "data: {\"type\":\"token\",\"content\":\" 데이터\"}\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "data: {\"type\":\"token\",\"content\":\"베\"}\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "data: {\"type\":\"token\",\"content\":\"이스\"}\n"
+    },
+    {
+      "seconds": 2.8081,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "data: {\"type\":\"token\",\"content\":\" 다운\"}\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "data: {\"type\":\"token\",\"content\":\" 대응\"}\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "data: {\"type\":\"token\",\"content\":\" (\"}\n"
+    },
+    {
+      "seconds": 2.8082,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "data: {\"type\":\"token\",\"content\":\"db\"}\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "data: {\"type\":\"token\",\"content\":\"-down\"}\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8197,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "data: {\"type\":\"token\",\"content\":\")\\n\\n\"}\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "data: {\"type\":\"token\",\"content\":\"####\"}\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "data: {\"type\":\"token\",\"content\":\" \"}\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8198,
+      "line": "data: {\"type\":\"token\",\"content\":\"1\"}\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "data: {\"type\":\"token\",\"content\":\".\"}\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "data: {\"type\":\"token\",\"content\":\" 증\"}\n"
+    },
+    {
+      "seconds": 2.8199,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8219,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8219,
+      "line": "data: {\"type\":\"token\",\"content\":\"상\"}\n"
+    },
+    {
+      "seconds": 2.8219,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.822,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.822,
+      "line": "data: {\"type\":\"token\",\"content\":\" 인\"}\n"
+    },
+    {
+      "seconds": 2.8221,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8221,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8221,
+      "line": "data: {\"type\":\"token\",\"content\":\"식\"}\n"
+    },
+    {
+      "seconds": 2.8221,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8221,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "data: {\"type\":\"token\",\"content\":\"\\n\"}\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "data: {\"type\":\"token\",\"content\":\"-\"}\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "data: {\"type\":\"token\",\"content\":\" 애\"}\n"
+    },
+    {
+      "seconds": 2.8222,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8223,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8223,
+      "line": "data: {\"type\":\"token\",\"content\":\"플\"}\n"
+    },
+    {
+      "seconds": 2.8223,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8223,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8223,
+      "line": "data: {\"type\":\"token\",\"content\":\"리\"}\n"
+    },
+    {
+      "seconds": 2.8223,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8267,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8267,
+      "line": "data: {\"type\":\"token\",\"content\":\"케\"}\n"
+    },
+    {
+      "seconds": 2.8267,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8267,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8267,
+      "line": "data: {\"type\":\"token\",\"content\":\"이션\"}\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "data: {\"type\":\"token\",\"content\":\" 로그\"}\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "data: {\"type\":\"token\",\"content\":\"에\"}\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8268,
+      "line": "data: {\"type\":\"token\",\"content\":\" `\"}\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "data: {\"type\":\"token\",\"content\":\"connection\"}\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "data: {\"type\":\"token\",\"content\":\" refused\"}\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "data: {\"type\":\"token\",\"content\":\"`,\"}\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8269,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "data: {\"type\":\"token\",\"content\":\" `\"}\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "data: {\"type\":\"token\",\"content\":\"timeout\"}\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "data: {\"type\":\"token\",\"content\":\"`,\"}\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "data: {\"type\":\"token\",\"content\":\" `\"}\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "data: {\"type\":\"token\",\"content\":\"could\"}\n"
+    },
+    {
+      "seconds": 2.827,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "data: {\"type\":\"token\",\"content\":\" not\"}\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "data: {\"type\":\"token\",\"content\":\" connect\"}\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "data: {\"type\":\"token\",\"content\":\" to\"}\n"
+    },
+    {
+      "seconds": 2.8271,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8295,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8295,
+      "line": "data: {\"type\":\"token\",\"content\":\" server\"}\n"
+    },
+    {
+      "seconds": 2.8295,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "data: {\"type\":\"token\",\"content\":\"`\"}\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "data: {\"type\":\"token\",\"content\":\" 메시\"}\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8296,
+      "line": "data: {\"type\":\"token\",\"content\":\"지가\"}\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "data: {\"type\":\"token\",\"content\":\" 다\"}\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "data: {\"type\":\"token\",\"content\":\"수\"}\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "data: {\"type\":\"token\",\"content\":\" 발생\"}\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "data: {\"type\":\"token\",\"content\":\"\\n\"}\n"
+    },
+    {
+      "seconds": 2.8297,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8298,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8298,
+      "line": "data: {\"type\":\"token\",\"content\":\"-\"}\n"
+    },
+    {
+      "seconds": 2.8298,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8298,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8298,
+      "line": "data: {\"type\":\"token\",\"content\":\" 모\"}\n"
+    },
+    {
+      "seconds": 2.8298,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8308,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8308,
+      "line": "data: {\"type\":\"token\",\"content\":\"니\"}\n"
+    },
+    {
+      "seconds": 2.8308,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8308,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8308,
+      "line": "data: {\"type\":\"token\",\"content\":\"터\"}\n"
+    },
+    {
+      "seconds": 2.8308,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8449,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8449,
+      "line": "data: {\"type\":\"token\",\"content\":\"링\"}\n"
+    },
+    {
+      "seconds": 2.8449,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8453,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8453,
+      "line": "data: {\"type\":\"token\",\"content\":\"에서\"}\n"
+    },
+    {
+      "seconds": 2.8454,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.856,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.856,
+      "line": "data: {\"type\":\"token\",\"content\":\" DB\"}\n"
+    },
+    {
+      "seconds": 2.856,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.856,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.856,
+      "line": "data: {\"type\":\"token\",\"content\":\" 인\"}\n"
+    },
+    {
+      "seconds": 2.856,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8641,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8641,
+      "line": "data: {\"type\":\"token\",\"content\":\"스\"}\n"
+    },
+    {
+      "seconds": 2.8641,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8642,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8642,
+      "line": "data: {\"type\":\"token\",\"content\":\"턴\"}\n"
+    },
+    {
+      "seconds": 2.8642,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8887,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8887,
+      "line": "data: {\"type\":\"token\",\"content\":\"스\"}\n"
+    },
+    {
+      "seconds": 2.8887,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.8888,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.8888,
+      "line": "data: {\"type\":\"token\",\"content\":\" 상태\"}\n"
+    },
+    {
+      "seconds": 2.8888,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.9207,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.9208,
+      "line": "data: {\"type\":\"token\",\"content\":\"가\"}\n"
+    },
+    {
+      "seconds": 2.9208,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.9208,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.9208,
+      "line": "data: {\"type\":\"token\",\"content\":\" down\"}\n"
+    },
+    {
+      "seconds": 2.9208,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.9231,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.9231,
+      "line": "data: {\"type\":\"token\",\"content\":\"으로\"}\n"
+    },
+    {
+      "seconds": 2.9231,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.9232,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.9232,
+      "line": "data: {\"type\":\"token\",\"content\":\" 표시\"}\n"
+    },
+    {
+      "seconds": 2.9232,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.94,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.9401,
+      "line": "data: {\"type\":\"token\",\"content\":\"되\"}\n"
+    },
+    {
+      "seconds": 2.9401,
+      "line": "\n"
+    },
+    {
+      "seconds": 2.9401,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 2.9401,
+      "line": "data: {\"type\":\"token\",\"content\":\"거나\"}\n"
+    },
+    {
+      "seconds": 2.9401,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1012,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1012,
+      "line": "data: {\"type\":\"token\",\"content\":\" health\"}\n"
+    },
+    {
+      "seconds": 3.1012,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "data: {\"type\":\"token\",\"content\":\" check\"}\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "data: {\"type\":\"token\",\"content\":\"가\"}\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "data: {\"type\":\"token\",\"content\":\" 연\"}\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1013,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1014,
+      "line": "data: {\"type\":\"token\",\"content\":\"속\"}\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "data: {\"type\":\"token\",\"content\":\" 실패\"}\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "data: {\"type\":\"token\",\"content\":\"\\n\"}\n"
+    },
+    {
+      "seconds": 3.1019,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "data: {\"type\":\"token\",\"content\":\"-\"}\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "data: {\"type\":\"token\",\"content\":\" 사용자\"}\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "data: {\"type\":\"token\",\"content\":\" 영향\"}\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.102,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "data: {\"type\":\"token\",\"content\":\":\"}\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "data: {\"type\":\"token\",\"content\":\" 로그인\"}\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "data: {\"type\":\"token\",\"content\":\",\"}\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "data: {\"type\":\"token\",\"content\":\" 결\"}\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "data: {\"type\":\"token\",\"content\":\"제\"}\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "data: {\"type\":\"token\",\"content\":\",\"}\n"
+    },
+    {
+      "seconds": 3.1021,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1148,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1148,
+      "line": "data: {\"type\":\"token\",\"content\":\" 조회\"}\n"
+    },
+    {
+      "seconds": 3.1148,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "data: {\"type\":\"token\",\"content\":\" 등\"}\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "data: {\"type\":\"token\",\"content\":\" 데이터\"}\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "data: {\"type\":\"token\",\"content\":\"베\"}\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "data: {\"type\":\"token\",\"content\":\"이스\"}\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "data: {\"type\":\"token\",\"content\":\"에\"}\n"
+    },
+    {
+      "seconds": 3.1149,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "data: {\"type\":\"token\",\"content\":\" 의\"}\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "data: {\"type\":\"token\",\"content\":\"존\"}\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "data: {\"type\":\"token\",\"content\":\"하는\"}\n"
+    },
+    {
+      "seconds": 3.115,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "data: {\"type\":\"token\",\"content\":\" 기능\"}\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "data: {\"type\":\"token\",\"content\":\" 전체\"}\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "data: {\"type\":\"token\",\"content\":\" 장애\"}\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "data: {\"type\":\"token\",\"content\":\"\\n\\n\"}\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1151,
+      "line": "data: {\"type\":\"token\",\"content\":\"####\"}\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "data: {\"type\":\"token\",\"content\":\" \"}\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "data: {\"type\":\"token\",\"content\":\"2\"}\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "data: {\"type\":\"token\",\"content\":\".\"}\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "data: {\"type\":\"token\",\"content\":\" \"}\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "data: {\"type\":\"token\",\"content\":\"1\"}\n"
+    },
+    {
+      "seconds": 3.1152,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "data: {\"type\":\"token\",\"content\":\"차\"}\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "data: {\"type\":\"token\",\"content\":\" 진\"}\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "data: {\"type\":\"token\",\"content\":\"단\"}\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "data: {\"type\":\"token\",\"content\":\" (\"}\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "data: {\"type\":\"token\",\"content\":\"5\"}\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1153,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1154,
+      "line": "data: {\"type\":\"token\",\"content\":\"분\"}\n"
+    },
+    {
+      "seconds": 3.1154,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1154,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1154,
+      "line": "data: {\"type\":\"token\",\"content\":\")\\n\"}\n"
+    },
+    {
+      "seconds": 3.1154,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1476,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1476,
+      "line": "data: {\"type\":\"token\",\"content\":\"-\"}\n"
+    },
+    {
+      "seconds": 3.1476,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1477,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1477,
+      "line": "data: {\"type\":\"token\",\"content\":\" [\"}\n"
+    },
+    {
+      "seconds": 3.1477,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1553,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1553,
+      "line": "data: {\"type\":\"token\",\"content\":\"추\"}\n"
+    },
+    {
+      "seconds": 3.1553,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1553,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1553,
+      "line": "data: {\"type\":\"token\",\"content\":\"가\"}\n"
+    },
+    {
+      "seconds": 3.1553,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1664,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1664,
+      "line": "data: {\"type\":\"token\",\"content\":\"적인\"}\n"
+    },
+    {
+      "seconds": 3.1664,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1664,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1665,
+      "line": "data: {\"type\":\"token\",\"content\":\" 절\"}\n"
+    },
+    {
+      "seconds": 3.1665,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1845,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1845,
+      "line": "data: {\"type\":\"token\",\"content\":\"차\"}\n"
+    },
+    {
+      "seconds": 3.1845,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1845,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1845,
+      "line": "data: {\"type\":\"token\",\"content\":\"는\"}\n"
+    },
+    {
+      "seconds": 3.1845,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1865,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1865,
+      "line": "data: {\"type\":\"token\",\"content\":\" 문\"}\n"
+    },
+    {
+      "seconds": 3.1865,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.1865,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.1865,
+      "line": "data: {\"type\":\"token\",\"content\":\"서\"}\n"
+    },
+    {
+      "seconds": 3.1865,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2039,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.204,
+      "line": "data: {\"type\":\"token\",\"content\":\"에서\"}\n"
+    },
+    {
+      "seconds": 3.204,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.204,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.204,
+      "line": "data: {\"type\":\"token\",\"content\":\" 확인\"}\n"
+    },
+    {
+      "seconds": 3.204,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2076,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2077,
+      "line": "data: {\"type\":\"token\",\"content\":\" 필요\"}\n"
+    },
+    {
+      "seconds": 3.2077,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2077,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2077,
+      "line": "data: {\"type\":\"token\",\"content\":\"]\\n\\n\"}\n"
+    },
+    {
+      "seconds": 3.2077,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2358,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2358,
+      "line": "data: {\"type\":\"token\",\"content\":\"이\"}\n"
+    },
+    {
+      "seconds": 3.2358,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2358,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2358,
+      "line": "data: {\"type\":\"token\",\"content\":\" 절\"}\n"
+    },
+    {
+      "seconds": 3.2358,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.249,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.249,
+      "line": "data: {\"type\":\"token\",\"content\":\"차\"}\n"
+    },
+    {
+      "seconds": 3.249,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.249,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.249,
+      "line": "data: {\"type\":\"token\",\"content\":\"에\"}\n"
+    },
+    {
+      "seconds": 3.249,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2935,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2935,
+      "line": "data: {\"type\":\"token\",\"content\":\" 따라\"}\n"
+    },
+    {
+      "seconds": 3.2935,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2935,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2935,
+      "line": "data: {\"type\":\"token\",\"content\":\" 초기\"}\n"
+    },
+    {
+      "seconds": 3.2936,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2949,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2949,
+      "line": "data: {\"type\":\"token\",\"content\":\" 증\"}\n"
+    },
+    {
+      "seconds": 3.295,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.295,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.295,
+      "line": "data: {\"type\":\"token\",\"content\":\"상을\"}\n"
+    },
+    {
+      "seconds": 3.295,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.298,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.298,
+      "line": "data: {\"type\":\"token\",\"content\":\" 인\"}\n"
+    },
+    {
+      "seconds": 3.298,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.2981,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.2981,
+      "line": "data: {\"type\":\"token\",\"content\":\"식\"}\n"
+    },
+    {
+      "seconds": 3.2981,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.301,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.301,
+      "line": "data: {\"type\":\"token\",\"content\":\"하고\"}\n"
+    },
+    {
+      "seconds": 3.3011,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3011,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3011,
+      "line": "data: {\"type\":\"token\",\"content\":\",\"}\n"
+    },
+    {
+      "seconds": 3.3011,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3037,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3037,
+      "line": "data: {\"type\":\"token\",\"content\":\" \"}\n"
+    },
+    {
+      "seconds": 3.3038,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3038,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3038,
+      "line": "data: {\"type\":\"token\",\"content\":\"1\"}\n"
+    },
+    {
+      "seconds": 3.3038,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3509,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3509,
+      "line": "data: {\"type\":\"token\",\"content\":\"차\"}\n"
+    },
+    {
+      "seconds": 3.3509,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.351,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.351,
+      "line": "data: {\"type\":\"token\",\"content\":\" 진\"}\n"
+    },
+    {
+      "seconds": 3.351,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3541,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3541,
+      "line": "data: {\"type\":\"token\",\"content\":\"단\"}\n"
+    },
+    {
+      "seconds": 3.3541,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3541,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3542,
+      "line": "data: {\"type\":\"token\",\"content\":\"을\"}\n"
+    },
+    {
+      "seconds": 3.3542,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3562,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3563,
+      "line": "data: {\"type\":\"token\",\"content\":\" 수행\"}\n"
+    },
+    {
+      "seconds": 3.3563,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3565,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3565,
+      "line": "data: {\"type\":\"token\",\"content\":\"하여\"}\n"
+    },
+    {
+      "seconds": 3.3566,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3754,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3755,
+      "line": "data: {\"type\":\"token\",\"content\":\" 문제\"}\n"
+    },
+    {
+      "seconds": 3.3755,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3755,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3756,
+      "line": "data: {\"type\":\"token\",\"content\":\"를\"}\n"
+    },
+    {
+      "seconds": 3.3756,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.378,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.378,
+      "line": "data: {\"type\":\"token\",\"content\":\" 해결\"}\n"
+    },
+    {
+      "seconds": 3.378,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.378,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.378,
+      "line": "data: {\"type\":\"token\",\"content\":\"할\"}\n"
+    },
+    {
+      "seconds": 3.378,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3886,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3886,
+      "line": "data: {\"type\":\"token\",\"content\":\" 수\"}\n"
+    },
+    {
+      "seconds": 3.3887,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.3887,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.3887,
+      "line": "data: {\"type\":\"token\",\"content\":\" 있습니다\"}\n"
+    },
+    {
+      "seconds": 3.3887,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4077,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4077,
+      "line": "data: {\"type\":\"token\",\"content\":\".\"}\n"
+    },
+    {
+      "seconds": 3.4077,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4077,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4078,
+      "line": "data: {\"type\":\"token\",\"content\":\" 추가\"}\n"
+    },
+    {
+      "seconds": 3.4078,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4273,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4273,
+      "line": "data: {\"type\":\"token\",\"content\":\"적인\"}\n"
+    },
+    {
+      "seconds": 3.4273,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4274,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4274,
+      "line": "data: {\"type\":\"token\",\"content\":\" 세\"}\n"
+    },
+    {
+      "seconds": 3.4274,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4336,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4336,
+      "line": "data: {\"type\":\"token\",\"content\":\"부\"}\n"
+    },
+    {
+      "seconds": 3.4336,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4336,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4337,
+      "line": "data: {\"type\":\"token\",\"content\":\" 절\"}\n"
+    },
+    {
+      "seconds": 3.4337,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4389,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4389,
+      "line": "data: {\"type\":\"token\",\"content\":\"차\"}\n"
+    },
+    {
+      "seconds": 3.4389,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4389,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4389,
+      "line": "data: {\"type\":\"token\",\"content\":\"는\"}\n"
+    },
+    {
+      "seconds": 3.4389,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4547,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4547,
+      "line": "data: {\"type\":\"token\",\"content\":\" 사\"}\n"
+    },
+    {
+      "seconds": 3.4547,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4547,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4548,
+      "line": "data: {\"type\":\"token\",\"content\":\"내\"}\n"
+    },
+    {
+      "seconds": 3.4548,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4756,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4756,
+      "line": "data: {\"type\":\"token\",\"content\":\" 문\"}\n"
+    },
+    {
+      "seconds": 3.4756,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4756,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4757,
+      "line": "data: {\"type\":\"token\",\"content\":\"서를\"}\n"
+    },
+    {
+      "seconds": 3.4757,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4842,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4843,
+      "line": "data: {\"type\":\"token\",\"content\":\" 참\"}\n"
+    },
+    {
+      "seconds": 3.4843,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4843,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4843,
+      "line": "data: {\"type\":\"token\",\"content\":\"조\"}\n"
+    },
+    {
+      "seconds": 3.4843,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.496,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.496,
+      "line": "data: {\"type\":\"token\",\"content\":\"하시\"}\n"
+    },
+    {
+      "seconds": 3.4961,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.4961,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.4961,
+      "line": "data: {\"type\":\"token\",\"content\":\"기\"}\n"
+    },
+    {
+      "seconds": 3.4961,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.5042,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.5042,
+      "line": "data: {\"type\":\"token\",\"content\":\" 바랍니다\"}\n"
+    },
+    {
+      "seconds": 3.5042,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.5042,
+      "line": "event: token\n"
+    },
+    {
+      "seconds": 3.5043,
+      "line": "data: {\"type\":\"token\",\"content\":\".\"}\n"
+    },
+    {
+      "seconds": 3.5043,
+      "line": "\n"
+    },
+    {
+      "seconds": 3.5441,
+      "line": "event: done\n"
+    },
+    {
+      "seconds": 3.5441,
+      "line": "data: {\"type\":\"done\",\"thread_id\":\"a723ddc8-71d0-47d9-92db-f95160dacb7e\"}\n"
+    },
+    {
+      "seconds": 3.5441,
+      "line": "\n"
+    }
+  ],
+  "event_types": [
+    "tool_call_start",
+    "tool_call_end",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "done"
+  ],
+  "thread_id": "a723ddc8-71d0-47d9-92db-f95160dacb7e",
+  "answer": "데이터베이스 다운 시 대응 절차는 다음과 같습니다:\n\n### Runbook: 데이터베이스 다운 대응 (db-down)\n\n#### 1. 증상 인식\n- 애플리케이션 로그에 `connection refused`, `timeout`, `could not connect to server` 메시지가 다수 발생\n- 모니터링에서 DB 인스턴스 상태가 down으로 표시되거나 health check가 연속 실패\n- 사용자 영향: 로그인, 결제, 조회 등 데이터베이스에 의존하는 기능 전체 장애\n\n#### 2. 1차 진단 (5분)\n- [추가적인 절차는 문서에서 확인 필요]\n\n이 절차에 따라 초기 증상을 인식하고, 1차 진단을 수행하여 문제를 해결할 수 있습니다. 추가적인 세부 절차는 사내 문서를 참조하시기 바랍니다."
+}

@@ -1,0 +1,11 @@
+{
+  "request": {
+    "message": "데이터베이스 다운 시 대응 절차를 운영 매뉴얼에서 검색해 주세요."
+  },
+  "http_status": "500",
+  "killed_backend_mcp_pid": 91245,
+  "response": "Internal Server Error",
+  "curl_error": "",
+  "passed": true,
+  "method": "Kill only this Backend's descendant MCP during a tool call."
+}

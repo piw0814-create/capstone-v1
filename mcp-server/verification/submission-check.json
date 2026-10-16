@@ -1,0 +1,25 @@
+{
+  "A": "PASS",
+  "B": "PASS",
+  "C": "PASS",
+  "D": "PASS",
+  "E": "PASS (mock only)",
+  "F": "PASS",
+  "output_schemas": "PASS",
+  "no_matches": "PASS",
+  "top_k_limit": "PASS",
+  "Literal_rejects_invalid_type": "PASS",
+  "jira_mode": "mock",
+  "tools": [
+    "search_operations_manual",
+    "search_jira_tickets",
+    "create_jira_ticket",
+    "get_monitoring_status"
+  ],
+  "resource_templates": [
+    "get_incident_runbook"
+  ],
+  "prompts": [
+    "incident_analysis_prompt"
+  ]
+}

@@ -1,0 +1,204 @@
+event: token
+data: {"type":"token","content":"운"}
+
+event: token
+data: {"type":"token","content":"영"}
+
+event: token
+data: {"type":"token","content":" 매"}
+
+event: token
+data: {"type":"token","content":"뉴"}
+
+event: token
+data: {"type":"token","content":"얼"}
+
+event: token
+data: {"type":"token","content":"을"}
+
+event: token
+data: {"type":"token","content":" 모두"}
+
+event: token
+data: {"type":"token","content":" 검색"}
+
+event: token
+data: {"type":"token","content":"하고"}
+
+event: token
+data: {"type":"token","content":" 상세"}
+
+event: token
+data: {"type":"token","content":"히"}
+
+event: token
+data: {"type":"token","content":" 분석"}
+
+event: token
+data: {"type":"token","content":"하는"}
+
+event: token
+data: {"type":"token","content":" 것은"}
+
+event: token
+data: {"type":"token","content":" 현실"}
+
+event: token
+data: {"type":"token","content":"적으로"}
+
+event: token
+data: {"type":"token","content":" 불"}
+
+event: token
+data: {"type":"token","content":"가능"}
+
+event: token
+data: {"type":"token","content":"합니다"}
+
+event: token
+data: {"type":"token","content":"."}
+
+event: token
+data: {"type":"token","content":" 대신"}
+
+event: token
+data: {"type":"token","content":" 특정"}
+
+event: token
+data: {"type":"token","content":" 문제"}
+
+event: token
+data: {"type":"token","content":"나"}
+
+event: token
+data: {"type":"token","content":" 상황"}
+
+event: token
+data: {"type":"token","content":"에"}
+
+event: token
+data: {"type":"token","content":" 대한"}
+
+event: token
+data: {"type":"token","content":" 정보를"}
+
+event: token
+data: {"type":"token","content":" 제공"}
+
+event: token
+data: {"type":"token","content":"해"}
+
+event: token
+data: {"type":"token","content":" 주"}
+
+event: token
+data: {"type":"token","content":"시면"}
+
+event: token
+data: {"type":"token","content":","}
+
+event: token
+data: {"type":"token","content":" 해당"}
+
+event: token
+data: {"type":"token","content":" 주"}
+
+event: token
+data: {"type":"token","content":"제"}
+
+event: token
+data: {"type":"token","content":"와"}
+
+event: token
+data: {"type":"token","content":" 관련"}
+
+event: token
+data: {"type":"token","content":"된"}
+
+event: token
+data: {"type":"token","content":" 운영"}
+
+event: token
+data: {"type":"token","content":" 매"}
+
+event: token
+data: {"type":"token","content":"뉴"}
+
+event: token
+data: {"type":"token","content":"얼"}
+
+event: token
+data: {"type":"token","content":"의"}
+
+event: token
+data: {"type":"token","content":" 절"}
+
+event: token
+data: {"type":"token","content":"차"}
+
+event: token
+data: {"type":"token","content":"를"}
+
+event: token
+data: {"type":"token","content":" 검색"}
+
+event: token
+data: {"type":"token","content":"하여"}
+
+event: token
+data: {"type":"token","content":" 필요한"}
+
+event: token
+data: {"type":"token","content":" 정보를"}
+
+event: token
+data: {"type":"token","content":" 제공"}
+
+event: token
+data: {"type":"token","content":"할"}
+
+event: token
+data: {"type":"token","content":" 수"}
+
+event: token
+data: {"type":"token","content":" 있습니다"}
+
+event: token
+data: {"type":"token","content":"."}
+
+event: token
+data: {"type":"token","content":" 특정"}
+
+event: token
+data: {"type":"token","content":"한"}
+
+event: token
+data: {"type":"token","content":" 질문"}
+
+event: token
+data: {"type":"token","content":"이나"}
+
+event: token
+data: {"type":"token","content":" 문제가"}
+
+event: token
+data: {"type":"token","content":" 있으"}
+
+event: token
+data: {"type":"token","content":"시면"}
+
+event: token
+data: {"type":"token","content":" 말씀"}
+
+event: token
+data: {"type":"token","content":"해"}
+
+event: token
+data: {"type":"token","content":" 주세요"}
+
+event: token
+data: {"type":"token","content":"."}
+
+event: done
+data: {"type":"done","thread_id":"26d94e1c-02e4-48ac-9fbf-098630c2d254"}
+

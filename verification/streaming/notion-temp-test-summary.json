@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-16T10:54:02.547771",
+  "source": "New user screenshot showing the full temporary Notion test code",
+  "script": "backend/scripts/test_stream.py",
+  "command": "uv run python -m scripts.test_stream",
+  "cwd": "/Users/inwoopark/workspace/ai-service/capstone-v1/backend",
+  "request": "운영 매뉴얼 검색해 주세요",
+  "thread_id": "test-001",
+  "returncode": 0,
+  "token_count": 39,
+  "tool_events": 0,
+  "last_event": {
+    "type": "done",
+    "thread_id": "test-001"
+  },
+  "answer": "어떤 주제나 문제에 대한 운영 매뉴얼을 검색하고 싶으신가요? 구체적인 검색어를 알려주시면 관련 절차를 찾아드리겠습니다."
+}

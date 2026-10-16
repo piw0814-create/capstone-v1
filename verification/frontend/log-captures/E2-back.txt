@@ -1,0 +1,12 @@
+INFO:     127.0.0.1:65070 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65108 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65133 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65172 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65184 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65211 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65297 - "POST /chat/stream HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [73367]
+INFO:     Stopping reloader process [73349]

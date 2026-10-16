@@ -1,0 +1,9 @@
+{
+  "backup": "/Users/inwoopark/.codex/backups/capstone-v1-before-s1-streaming-20261016-104409",
+  "baseline_hashes": {
+    "backend/agent/graph.py": "4e70d338dd796b5c178011ad1c1d05165a7aabf499d4bdbcdc065be2d112b34d",
+    "backend/agent/mcp_client.py": "34a3773f4f6b3d651f1cabc79b98cd25cd35ecd8cbb03e2cf1498a9965c8f882",
+    "backend/schemas/chat.py": "68b9f4515f7a30673a746a629d28615c314551a8d7779c76b2b29f4cb20e8174",
+    "mcp-server/server.py": "fc643f5206c541522221ace636bc8033f8723adddea18b1ea184bb5b7724dac8"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "events": [
+    {
+      "type": "token",
+      "content": "안"
+    },
+    {
+      "type": "token",
+      "content": "녕하세요"
+    },
+    {
+      "type": "token",
+      "content": "!"
+    },
+    {
+      "type": "token",
+      "content": " 무엇"
+    },
+    {
+      "type": "token",
+      "content": "을"
+    },
+    {
+      "type": "token",
+      "content": " 도"
+    },
+    {
+      "type": "token",
+      "content": "와"
+    },
+    {
+      "type": "token",
+      "content": "드"
+    },
+    {
+      "type": "token",
+      "content": "릴"
+    },
+    {
+      "type": "token",
+      "content": "까요"
+    },
+    {
+      "type": "token",
+      "content": "?"
+    },
+    {
+      "type": "token",
+      "content": " 운영"
+    },
+    {
+      "type": "token",
+      "content": " 관련"
+    },
+    {
+      "type": "token",
+      "content": "하여"
+    },
+    {
+      "type": "token",
+      "content": " 궁"
+    },
+    {
+      "type": "token",
+      "content": "금"
+    },
+    {
+      "type": "token",
+      "content": "한"
+    },
+    {
+      "type": "token",
+      "content": " 점"
+    },
+    {
+      "type": "token",
+      "content": "이나"
+    },
+    {
+      "type": "token",
+      "content": " 문제가"
+    },
+    {
+      "type": "token",
+      "content": " 있으"
+    },
+    {
+      "type": "token",
+      "content": "시면"
+    },
+    {
+      "type": "token",
+      "content": " 말씀"
+    },
+    {
+      "type": "token",
+      "content": "해"
+    },
+    {
+      "type": "token",
+      "content": " 주세요"
+    },
+    {
+      "type": "token",
+      "content": "."
+    },
+    {
+      "type": "done",
+      "thread_id": "f4400417-c9b4-4048-ae14-f2962bfad3e0"
+    }
+  ]
+}

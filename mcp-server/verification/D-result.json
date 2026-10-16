@@ -1,0 +1,26 @@
+{
+  "tool": "search_jira_tickets",
+  "input": {
+    "query": "auth-service"
+  },
+  "output": {
+    "result": [
+      {
+        "key": "OPS-101",
+        "summary": "[mock] 'auth-service' 관련 incident 조사",
+        "status": "In Progress",
+        "priority": "High",
+        "assignee": "ops-oncall@example.com",
+        "updated": "2026-10-14T12:33:45.432667"
+      },
+      {
+        "key": "OPS-87",
+        "summary": "[mock] 'auth-service' 과거 발생 사례 (resolved)",
+        "status": "Done",
+        "priority": "Medium",
+        "assignee": null,
+        "updated": "2026-10-14T12:33:45.432667"
+      }
+    ]
+  }
+}

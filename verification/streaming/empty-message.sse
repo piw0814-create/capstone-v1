@@ -1,0 +1,81 @@
+event: token
+data: {"type":"token","content":"안"}
+
+event: token
+data: {"type":"token","content":"녕하세요"}
+
+event: token
+data: {"type":"token","content":"!"}
+
+event: token
+data: {"type":"token","content":" 무엇"}
+
+event: token
+data: {"type":"token","content":"을"}
+
+event: token
+data: {"type":"token","content":" 도"}
+
+event: token
+data: {"type":"token","content":"와"}
+
+event: token
+data: {"type":"token","content":"드"}
+
+event: token
+data: {"type":"token","content":"릴"}
+
+event: token
+data: {"type":"token","content":"까요"}
+
+event: token
+data: {"type":"token","content":"?"}
+
+event: token
+data: {"type":"token","content":" 운영"}
+
+event: token
+data: {"type":"token","content":" 관련"}
+
+event: token
+data: {"type":"token","content":"하여"}
+
+event: token
+data: {"type":"token","content":" 궁"}
+
+event: token
+data: {"type":"token","content":"금"}
+
+event: token
+data: {"type":"token","content":"한"}
+
+event: token
+data: {"type":"token","content":" 점"}
+
+event: token
+data: {"type":"token","content":"이나"}
+
+event: token
+data: {"type":"token","content":" 문제가"}
+
+event: token
+data: {"type":"token","content":" 있으"}
+
+event: token
+data: {"type":"token","content":"시면"}
+
+event: token
+data: {"type":"token","content":" 말씀"}
+
+event: token
+data: {"type":"token","content":"해"}
+
+event: token
+data: {"type":"token","content":" 주세요"}
+
+event: token
+data: {"type":"token","content":"."}
+
+event: done
+data: {"type":"done","thread_id":"f4400417-c9b4-4048-ae14-f2962bfad3e0"}
+

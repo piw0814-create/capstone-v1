@@ -1,0 +1,10 @@
+{
+  "request": {
+    "message": "데이터베이스 다운 시 대응 절차를 운영 매뉴얼에서 검색해 주세요."
+  },
+  "http_status": 500,
+  "killed_backend_child_pid": 80872,
+  "response": "Internal Server Error",
+  "curl_error": "",
+  "method": "Clarified the search topic after the guide query produced no tool call. Killed only the MCP subprocess directly owned by this Backend while handling the request."
+}

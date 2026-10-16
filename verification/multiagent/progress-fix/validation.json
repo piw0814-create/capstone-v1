@@ -1,0 +1,18 @@
+{
+  "event_order_valid": true,
+  "writing_tokens_equal_final": true,
+  "tokens_by_task": {
+    "task_1": 53,
+    "task_2": 218,
+    "task_3": 441
+  },
+  "counts": {
+    "plan_created": 1,
+    "task_list_created": 1,
+    "task_started": 3,
+    "sub_agent_token": 712,
+    "task_completed": 3,
+    "token": 1,
+    "done": 1
+  }
+}

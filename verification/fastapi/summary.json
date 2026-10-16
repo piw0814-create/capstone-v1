@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-14T14:04:08.769366",
+  "source": "professor a11-fastapi",
+  "source_commit": "7c48bd9a554bcd02af08c5bebbc56d16b4843d2b",
+  "core_files_exact_match": true,
+  "model": "gpt-4o",
+  "checks": {
+    "health": "PASS",
+    "schema": "PASS",
+    "T1_manual_search": "PASS",
+    "T2_monitoring": "PASS",
+    "T3_thread_memory_and_jira": "PASS",
+    "E2_unknown_system": "PASS",
+    "E1_targeted_inflight_mcp_failure_http500": "PASS",
+    "recovery_next_chat": "PASS"
+  },
+  "E1_note": "Guide query alone did not call a tool. Clarified the search topic and killed only the Backend-owned MCP subprocess during the tool call. Both results saved.",
+  "tool_calls_note": "Matches professor implementation: response includes calls from full conversation history."
+}

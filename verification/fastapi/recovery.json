@@ -1,0 +1,1 @@
+{"thread_id":"901c11dc-9589-4395-9ee0-6400f64e150e","message":"현재 `auth-service` 시스템 상태는 \"degraded\"입니다. 세부 사항은 다음과 같습니다:\n\n- CPU 사용률: 78.4%\n- 메모리 사용률: 71.2%\n- 활성 알림:\n  - 로그인 실패율이 지난 10분 동안 20% 이상입니다.\n  - 95번째 백분위수 지연 시간이 1.8초로, 임계값인 800ms를 초과했습니다.\n\n이 문제에 대해 추가 조치가 필요하시면 말씀해 주세요.","tool_calls":[{"name":"get_monitoring_status","args":{"system_name":"auth-service"}}]}

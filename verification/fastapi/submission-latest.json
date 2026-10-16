@@ -1,0 +1,15 @@
+{
+  "archive": "/Users/inwoopark/Downloads/ai-capstone-fastapi-울산4반-박인우.zip",
+  "backup": "/Users/inwoopark/.codex/backups/fastapi-before-e1-e2-replacement-20261014-144559",
+  "files": [
+    "T1.png",
+    "T2.png",
+    "T3.png",
+    "E1.png",
+    "E2.png"
+  ],
+  "T1_T2_T3_preserved": true,
+  "E1": "Latest original-guide commands; HTTP 200; tool_calls empty",
+  "E2": "Latest curl capture; HTTP 200; get_monitoring_status(non-existent-system)",
+  "zip_integrity": "PASS"
+}

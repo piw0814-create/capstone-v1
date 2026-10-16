@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-16T10:50:17.487637",
+  "source": "User-provided Notion S1 screenshots; no compatibility patch applied",
+  "checks": {
+    "event_schema": "PASS",
+    "sse_formatter": "PASS",
+    "converter_order_and_preview": "PASS",
+    "server_health": "PASS",
+    "original_endpoints_and_agent_unchanged": "PASS",
+    "original_guide_DB_query_stream": "PASS",
+    "four_event_types_and_blank_boundaries": "PASS",
+    "tokens_arrive_over_time": "PASS",
+    "same_thread_followup": "PASS",
+    "empty_message_observation": "HTTP 200, greeting tokens and done",
+    "notion_original_temporary_script": "PASS: 39 tokens, done(test-001); no tool call",
+    "user_disconnect_trace": "Cancellation propagation observed; in-flight tool handling unverified"
+  },
+  "first_request": {
+    "thread_id": "a723ddc8-71d0-47d9-92db-f95160dacb7e",
+    "token_event_count": 182,
+    "token_arrival_span_seconds": 0.9745,
+    "elapsed_seconds": 3.548,
+    "start_event_args": {}
+  },
+  "disconnect": {
+    "status": "CANCELLATION OBSERVED IN USER TRACE",
+    "request": "운영 매뉴얼을 모두 검색하고 상세히 분석해 주세요.",
+    "observation": "User-provided LangSmith trace shows CancelledError (Cancelled via cancel scope) and No outputs for the original disconnect-test query.",
+    "prior_automated_attempt": "Original query finished with done before Ctrl+C took effect; backend cancellation and in-flight tool handling not established.",
+    "checked_at": "2026-10-16T11:15:03.112563",
+    "evidence": "captures/disconnect-langsmith.png",
+    "thread_id": "1ef844e6-ac36-48b0-b7da-5dac31f050e2",
+    "limits": "No actual tool execution node is visible in this trace; cannot establish cancellation behavior of an in-flight MCP tool or completion of remote LLM work from this screenshot."
+  },
+  "notes": [
+    "Notion arguments conversion kept exactly as supplied; latent string-versus-dict concern was not triggered in the real DB query.",
+    "S2 Frontend not implemented in this step.",
+    "User subsequently supplied the expanded temporary script screenshot; implemented and executed as provided.",
+    "User-provided LangSmith disconnect trace inspected; no direct LangSmith account query made."
+  ],
+  "backup": "/Users/inwoopark/.codex/backups/capstone-v1-before-s1-streaming-20261016-104409",
+  "temporary_script": {
+    "checked_at": "2026-10-16T10:54:02.547771",
+    "source": "New user screenshot showing the full temporary Notion test code",
+    "script": "backend/scripts/test_stream.py",
+    "command": "uv run python -m scripts.test_stream",
+    "cwd": "/Users/inwoopark/workspace/ai-service/capstone-v1/backend",
+    "request": "운영 매뉴얼 검색해 주세요",
+    "thread_id": "test-001",
+    "returncode": 0,
+    "token_count": 39,
+    "tool_events": 0,
+    "last_event": {
+      "type": "done",
+      "thread_id": "test-001"
+    },
+    "answer": "어떤 주제나 문제에 대한 운영 매뉴얼을 검색하고 싶으신가요? 구체적인 검색어를 알려주시면 관련 절차를 찾아드리겠습니다."
+  }
+}

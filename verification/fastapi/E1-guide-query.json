@@ -1,0 +1,10 @@
+{
+  "request": {
+    "message": "운영 매뉴얼 검색해 주세요."
+  },
+  "http_status": 200,
+  "killed_backend_child_pid": null,
+  "response": "{\"thread_id\":\"da1b333f-e085-499f-bdad-4837daa3ed37\",\"message\":\"어떤 주제나 문제에 대한 운영 매뉴얼을 검색하고 싶으신가요? 구체적인 검색 질의를 알려주시면 관련된 매뉴얼을 찾아드리겠습니다.\",\"tool_calls\":[]}",
+  "curl_error": "",
+  "method": "Kill only the MCP subprocess belonging to this Backend during a tool call; Inspector untouched."
+}

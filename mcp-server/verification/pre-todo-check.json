@@ -1,0 +1,18 @@
+{
+  "basis": "첨부 노션 MCP Server / TO-DO 전",
+  "tools": [
+    "get_monitoring_status"
+  ],
+  "resources": [
+    "get_incident_runbook"
+  ],
+  "prompts": [
+    "incident_analysis_prompt"
+  ],
+  "monitoring": "PASS",
+  "unknown_uses_0_0_like_guide": "PASS",
+  "runbooks_all_3": "PASS",
+  "missing_runbook": "PASS",
+  "resource_default_mime_type": "text/plain",
+  "prompt": "PASS"
+}

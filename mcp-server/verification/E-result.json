@@ -1,0 +1,14 @@
+{
+  "tool": "create_jira_ticket",
+  "input": {
+    "summary": "auth-service 로그인 실패율 급증",
+    "description": "실패율 20%, p95 1.8s"
+  },
+  "output": {
+    "key": "OPS-9999",
+    "url": "https://example.atlassian.net/browse/OPS-9999",
+    "summary": "auth-service 로그인 실패율 급증",
+    "status": "To Do",
+    "created_at": "2026-10-14T12:33:45.436746"
+  }
+}
